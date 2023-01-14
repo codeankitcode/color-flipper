@@ -3,6 +3,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    background-color: #FAD3E7;
 }
 
 header{
@@ -46,18 +48,17 @@ main{
 
 }
 .container{
-    width: 500px;
+    width: 400px;
     margin: auto;
 }
 h2{
     /* margin: auto; */
     background-color: rgb(14, 13, 13);
-
     color: #fff;
     font-weight: 800;
     padding: 15px 25px;
     border-radius: 8px;
-    text-align: left;
+    /* text-align: left; */
 
 }
 #btn{
@@ -65,7 +66,7 @@ h2{
     font-weight: bold;
     background-color: whitesmoke;
     border-radius: 5px;
-    letter-spacing: 1px;
     cursor: pointer;
+    letter-spacing: 1px;
 
 }

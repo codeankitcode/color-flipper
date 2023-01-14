@@ -1,19 +1,17 @@
-// const btn = document.querySelector("#btn")
-// const color = document.querySelector("#color")
-// console.log(color)
+const btn = document.querySelector("#btn")
+const color = document.querySelector("#color")
 
 
-// let colors = ["FAD3E7", "EFA3C8", "0081B4", "FF8B13", "8DCBE6", "FFEA20", "13005A"]
+let colors = ["#FAD3E7", "#EFA3C8", "#0081B4", "#FF8B13", "#8DCBE6", "#FFEA20", "#13005A"]
 
-// btn.addEventListener("click", function(){
-//     let colorCode = "#"
+btn.addEventListener("click", function(){
+    let randomNum = randomColor()
+    color.textContent = colors[randomNum]
+    document.body.style.backgroundColor = colors[randomNum]
+
     
-// })
+})
 
-// function randomColor(){
-//     let randomNum = Math.floor(Math.random() * 7)
-//     return randomNum
-// }
-
-
-// console.log(randomColor())
+function randomColor(){
+    return Math.floor(Math.random() * 7)
+}
