@@ -2,7 +2,7 @@ const btn = document.querySelector("#btn")
 const color = document.querySelector("#color")
 
 
-let colors = ["#FAD3E7", "#EFA3C8", "#0081B4", "#FF8B13", "#8DCBE6", "#FFEA20", "#13005A"]
+let colors = ["#FAD3E7", "#EFA3C8", "RGB(255,0,0)", "RGB(0,128,0)", "#8DCBE6", "#FFEA20", "#13005A"]
 
 btn.addEventListener("click", function(){
     let randomNum = randomColor()
@@ -13,5 +13,5 @@ btn.addEventListener("click", function(){
 })
 
 function randomColor(){
-    return Math.floor(Math.random() * 7)
+    return Math.floor(Math.random() * colors.length)
 }
